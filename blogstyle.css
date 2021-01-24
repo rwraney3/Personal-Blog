@@ -1,0 +1,145 @@
+body{
+    font-family: 'Bodoni Moda' , 'Open Sans', sans-serif;
+}
+
+
+h1 {
+    font-size: 5vw;
+  }
+
+h2 {
+    font-size: 3.0vw;
+}
+
+h3 {
+      font-size: 2.0vw;
+}
+ 
+p {
+    font-size: 2vmin;
+    margin-top: auto;
+    text-align: center;
+    color: gray;
+    font-weight: lighter;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    caption-side: bottom;
+}
+
+li{
+      list-style-type: none;
+      text-indent: none;
+      color: gray;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/*#page-wrap { 
+    width: 600px; 
+    margin: 15px auto; 
+    position: relative; 
+  }*/
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    grid-area:hd;
+}
+
+.sidebar{
+    padding: 20px;
+    margin: 25px;
+    grid-area: sd;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 20px;
+    grid-area: main;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: ft;
+}
+
+#one{
+    display: flex;
+    width: 45%;
+    height: auto;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+    
+#two{
+    width: 45%;
+    height: auto;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#three{
+    width: 45%;
+    height: auto;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#four{
+    display: flex;
+    width: 45%;
+    height: auto;
+    align-content: space-around;
+}
+
+
+@media(min-width: 900px) {
+    .h1{
+        font-size: 100%;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "hd hd"
+        "main sd"
+        "ft ft";
+    }
+}
